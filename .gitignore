@@ -40,5 +40,7 @@ yarn-error.*
 /ios
 /android
 
-.env
+firebase.ts
+auth.tsx
+firestore.ts
 .env.local

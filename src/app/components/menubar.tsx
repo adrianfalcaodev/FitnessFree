@@ -4,27 +4,31 @@ import { View, Text, Pressable, StyleSheet, Image } from "react-native";
 export default function Menubar() {
   return (
     <View style={styles.navbar}>
+
     <Link href="./index" asChild>
       <Pressable>
         <Image source={require('../assets/home.png')} style={styles.icon} />
       </Pressable>
     </Link>
-        <Link href="../../pages/workout" asChild>
+
+    <Link href="../../pages/(personalPages)/clients" asChild>
       <Pressable>
-        <Image source={require('../assets/crossfit.png')} style={styles.icon} />
+        <Image source={require('../assets/supervisor.png')} style={styles.icon} />
       </Pressable>
     </Link>
-        <Link href="../../pages/calendar" asChild>
+
+    <Link href="../../pages/(personalPages)/calendar" asChild>
       <Pressable>
         <Image source={require('../assets/calendar.png')} style={styles.icon} />
       </Pressable>
     </Link>
-        <Link href="../../pages/finance" asChild>
+
+    <Link href="../../pages/(personalPages)/finance" asChild>
       <Pressable>
         <Image source={require('../assets/baseline_savings_black_18.png')} style={styles.icon} />
       </Pressable>
     </Link>
-    </View>
+  </View>
   );
 }
 
